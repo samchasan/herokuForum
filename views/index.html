@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<head>
+
+</head>
+
+<body>
+
+  <ul>
+    {{#bands}}
+    <li>{{.}}</li>
+    {{/bands}}
+  </ul>
+
+ <h1> What is your favorite band? </h1>
+ <h2> POST</h2>
+   <form id='form' method='POST' action='/processit'>
+   <div>
+     <label for='bandname'>Band Name:</label>
+     <input type='text' id='bandname' name='bandname'>
+   </div>
+       <div class='button'>
+       <button type='submit'>Submit</button>
+     </div>
+ 
+   </form>
+ 
+
+</body>
